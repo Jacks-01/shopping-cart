@@ -36,16 +36,25 @@ function handleSubmit(event) {
 
 }
 
-// TODO: Add the selected item and quantity to the cart
+// Add the selected item and quantity to the cart // DONE
 function addSelectedItemToCart() {
-  item.
-  // TODO: suss out the item picked from the select list
-  // TODO: get the quantity
-  // TODO: using those, add one item to the Cart
+  
+  // suss out the item picked from the select list // DONE
+  const item = document.getElementById('items').value; // grabs item name from selected value in dropdown
+  
+  // get the quantity // DONE
+  const quantity = document.getElementById('quantity').value; //grabs number from counter
+
+  // using those, add one item to the Cart // DONE
+  console.log({item}, {quantity});
+  cart.addItem(item, quantity);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+  
+
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
